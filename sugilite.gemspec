@@ -6,10 +6,10 @@ require 'sugilite/version'
 Gem::Specification.new do |spec|
   spec.name          = "sugilite"
   spec.version       = Sugilite::VERSION
-  spec.authors       = ["Shogo Kawaguchi"]
+  spec.authors       = ["k-shogo"]
   spec.email         = ["platycod0n.ramosa@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{related word suggestion system}
+  spec.description   = %q{related word suggestion system}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_dependency 'spinel', '>= 0.2'
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
